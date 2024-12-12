@@ -1,0 +1,235 @@
+.chelsea-market-regular { /*Configuração da fonte do Google Fonts(não sei se é necessário mas pelo menos funciona)*/
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} 
+/*Configuração padrão do site*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("https://static1.squarespace.com/static/5fe4caeadae61a2f19719512/t/6675e22e7ddd7c67184f7686/1719001651051/12.jpg?format=1500w");
+    background-size:100%;
+    text-align: center;
+    color:black;
+}
+/*Estilização da página inicial*/
+h2{
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+h3{font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;}
+.Nome{
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 6px 6px 6px red;
+}
+.Nome2{
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 6px 6px 6px red;
+}
+.Nome::first-letter, .Nome2::first-letter, h2::first-letter{
+    color: red;
+}
+.cta {
+    margin-top: 150px;
+}
+.Nome2:hover {
+    color: red;
+}
+/*estilização dos botões*/
+.btn, button {
+    background-color: white;
+    color: red;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease;
+}
+.btn:hover {
+    background-color: black;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+/*Estilização da página do cardápio*/
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 40px; 
+    width: 100%; 
+    height: 100px; 
+    padding: 100px;
+    padding-top: 6px;
+    justify-content: center;
+}
+.produto{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px black;
+    text-align: center;
+}
+.produto img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+.produto h1 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+.produto button {
+    padding: 8px 16px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.produto button:hover {
+    background-color: black;
+    color: red;
+}
+a {
+    text-decoration: none;
+}
+/*estilização da página de detalhes*/
+.container{
+    padding-top: 30px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+#detalhes, #formulario{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 4px 4px 4px black;
+    text-align: center;
+}
+#detalhes img {
+    width: 40%;
+    box-shadow: 4px 4px 4px black;
+    height: auto;
+    border-radius: 10px;
+}
+#detalhes img:hover {
+    width: 42%;
+}
+.container2{
+    padding-top: 12px;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+.container2 button{
+    cursor: pointer;  
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    height: 40px;
+    width: 400px;
+    background-color: red;
+    color: black;
+}
+.container2 button:hover{
+    height: 30px;
+    background-color: black;
+    color: red;
+}
+.comprar-container {
+    margin-top: 20px;
+    text-align: center;  
+}
+
+#comprar {
+    background-color: red;  
+    color: black;
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 16px;  
+    animation: piscar 1.5s infinite alternate; 
+}
+
+@keyframes piscar {
+    0% {
+        background-color: red;  
+    }
+    50% {
+        background-color: white;  
+    }
+    100% {
+        background-color: red;  
+    }
+}
+
+/*Configurações do Timer*/
+#timer{
+    size: 120%;
+    color: red;
+}
+#hora, #minuto, #segundo{
+    color: white;
+}
+#contador{
+    padding-right: 290px;
+}

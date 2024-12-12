@@ -1,0 +1,11 @@
+POST https://tech4japa.fly.dev/produtos
+Content-Type: application/json
+
+{
+    "nome": "Matheus",
+    "restaurante": "Resutorant",
+    "imagem": "imagens/shiokara.jpg",
+    "produto": "Shiokara",
+    "descricao": "Esse prato é preparado fermentando lula, polvo ou peixe em suas próprias vísceras com sal. O resultado é um sabor salgado e picante, que pode ser um choque inicial para o paladar, mas que conquista muitos apreciadores"
+    
+}
